@@ -2,6 +2,11 @@
 Changelog for package inorbit_republisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix LatchPublisher peer_subscribe to publish all key-values (`#25 <https://github.com/inorbit-ai/ros_inorbit_samples/issues/25>`_)
+* Contributors: Leandro
+
 0.3.0 (2023-06-03)
 -----------
 * Add an explicit latched property for republishers (`#17 <https://github.com/inorbit-ai/ros_inorbit_samples/pull/17>`_)
