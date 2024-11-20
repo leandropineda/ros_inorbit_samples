@@ -148,7 +148,7 @@ def main():
 
                 if val is not None:
                     pub_key = "{}+{}".format(topic, in_topic) if latched else topic
-                    pubs[pub_key].publish("{}={}".format(key, val))
+                    pubs[pub_key].publish(String("{}={}".format(key, val)))
 
 
         # subscribe
@@ -303,7 +303,7 @@ class LatchPublisher(rospy.Publisher, rospy.SubscribeListener):
 
     def publish(self, msg):
         # Map key to message so they can be all published when a peer subscribes.
-        self.message[msg.split('=')[0]] = msg
+        self.message[msg.data.split('=')[0]] = msg
         self.latch_publisher.publish(msg)
 
     def peer_subscribe(self, resolved_name, publish, publish_single):
