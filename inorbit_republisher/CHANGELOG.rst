@@ -2,6 +2,11 @@
 Changelog for package inorbit_republisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix LatchPublisher publish to handle ROS String messages (`#26 <https://github.com/inorbit-ai/ros_inorbit_samples/issues/26>`_)
+* Contributors: Leandro
+
 0.3.1 (2024-11-13)
 ------------------
 * Fix LatchPublisher peer_subscribe to publish all key-values (`#25 <https://github.com/inorbit-ai/ros_inorbit_samples/issues/25>`_)
